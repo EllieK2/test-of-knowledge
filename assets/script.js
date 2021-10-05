@@ -1,7 +1,7 @@
 const startButton = document.getElementById('start-btn')
+console.log ('start-btn')
 
 startButton.addEventListener('click', startGame)
-console.log('Started')
 
 function startGame () {
 

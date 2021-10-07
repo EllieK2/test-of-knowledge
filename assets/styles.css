@@ -1,11 +1,10 @@
-*,
-*::before,
-*::after {
+
+* {
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-body {
+main {
   padding: 0;
   margin: 0;
   display: flex;
@@ -36,17 +35,6 @@ body {
 .btn:hover {
   border-colour: black;
 }
-.start-btn,
-next-btn {
-  font-size: 1, 5rem;
-  font-weight: bold;
-  padding: 10 px, 20px;
-}
-.controls {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.hide {
-  display: none;
+.flex-container {
+
 }

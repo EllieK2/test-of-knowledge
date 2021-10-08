@@ -24,7 +24,7 @@ main {
   text-align: center;
 }
 
-.btn, .question-btn {
+.main-btn, .question-btn {
   display: flex;
   flex-direction: row; 
   flex-wrap: wrap;  
@@ -37,7 +37,7 @@ main {
   border-radius: 5px;
 
 }
-.btn, .question-btn :hover {
+.main-btn, .question-btn :hover {
   border-colour: black;
 
 }

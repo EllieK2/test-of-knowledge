@@ -14,27 +14,32 @@ main {
   background-color: rgb(186, 243, 224);
 }
 
-.container {
+.container, .counter-div {
   width: 800px;
   max-width: 50%;
   background-color: rgb(68, 134, 112);
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 6px 2 px;
+  text-align: center;
 }
 
 .btn {
   display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;  
   justify-content: center;
-  text-align: center;
-  grid-template-columns: repeat(2, auto);
+  text-align: center; 
+  align-items: center;
   gap: 10px;
   margin: 20px 0;
   border: 1 px solid cornflowerblue;
   border-radius: 5px;
+
 }
 .btn:hover {
   border-colour: black;
+
 }
 .flex-container {
   display: flex;
@@ -43,11 +48,10 @@ main {
   justify-content: space-between;
   font-style: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
-  align-content: space-around;
+  text-align: justify;
 }
 .main-text {
-  display: flex; 
-  font-size:medium; 
+  display: flex;
+  font-size: medium;
   justify-content: center;
-
 }

@@ -41,7 +41,7 @@ main {
   border-colour: black;
 
 }
-.flex-container {
+.flex-container, .container-box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -55,3 +55,9 @@ main {
   font-size: medium;
   justify-content: center;
 }
+
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  body {
+    background: #ccc;
+  }
+}

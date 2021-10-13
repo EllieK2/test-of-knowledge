@@ -1,1 +1,0 @@
-console.log('Your external JavaScript file is linked 🎉');

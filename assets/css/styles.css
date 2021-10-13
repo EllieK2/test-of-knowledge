@@ -1,4 +1,11 @@
-* {
+:root {
+--cotton-candy: #fdc5f5ff;
+--mauve: #f7aef8ff;
+--lavender-floral: #b388ebff;
+--cornflower-blue: #8093f1ff;
+--sky-blue-crayola: #72ddf7ff;
+}
+*{
   box-sizing: border-box;
 
 }
@@ -11,8 +18,8 @@ body {
 }
 
 .header {
-  font-size: 20px;
-
+  font-size: 2rem;
+  background-color: var(--cornflower-blue);
 }
 
 .nav-container {
@@ -22,8 +29,8 @@ body {
 }
 
 .nav-item {
-  padding: 20 px;
-  font-size: 20px;
+  padding: 2rem;
+  font-size: 2rem;
   text-decoration: none;
   colour: black;
 
@@ -31,5 +38,6 @@ body {
 @media screen and (max-width: 576px) {
 .nav-container{
   flex-direction:column; 
-}  
+  align-items: center;
+  }  
 }

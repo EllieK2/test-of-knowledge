@@ -48,6 +48,19 @@ font-size: 1rem;
 
 }
 
+.btn {
+  padding: 1 rem 1.5 rem; 
+  border: 1px solid;
+  border-radius: 0.4rem;
+  border-color: var(--sky-blue-crayola););
+  font-size: 1rem;
+  letter-spacing: 0.2rem;  
+}
+
+.btn:hover {
+  background-color: var(--mauve);
+  cursor: -webkit-zoom-in;
+}
 @media screen and (max-width: 576px) {
 .nav-container{
   flex-direction:column; 

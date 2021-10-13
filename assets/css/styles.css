@@ -42,9 +42,13 @@ font-size: 1rem;
 
 }
 
+.start-container {
+  text-align: center;
+}
 .title {
   font-size: 2rem;
   font-weight: 200;
+  
 
 }
 
@@ -55,6 +59,7 @@ font-size: 1rem;
   border-color: var(--sky-blue-crayola););
   font-size: 1rem;
   letter-spacing: 0.2rem;  
+  font-weight: 600;
 }
 
 .btn:hover {

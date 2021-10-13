@@ -14,11 +14,12 @@ body {
   margin: 0;
   font-family: "Architect Daughter";
   line-height: 1,4; 
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .header {
-  font-size: 2rem;
+  color:black; 
+  font-size: 1,4rem;
   background-color: var(--cornflower-blue);
 }
 
@@ -31,13 +32,30 @@ body {
 .nav-item {
   padding: 2rem;
   font-size: 2rem;
+  font-style: normal;
   text-decoration: none;
-  colour: black;
+  color: black;
+}
+
+.main {
+font-size: 1rem;
 
 }
+
+.title {
+  font-size: 2rem;
+  font-weight: 200;
+
+}
+
 @media screen and (max-width: 576px) {
 .nav-container{
   flex-direction:column; 
   align-items: center;
   }  
+  .start-container {
+    margin: 0 2rem;
+    padding: 2 rem;
 }
+}
+

@@ -48,15 +48,13 @@ font-size: 1rem;
 .title {
   font-size: 2rem;
   font-weight: 200;
-  
-
 }
 
 .btn {
   padding: 1 rem 1.5 rem; 
   border: 1px solid;
   border-radius: 0.4rem;
-  border-color: var(--sky-blue-crayola););
+  border-color: var(--sky-blue-crayola);
   font-size: 1rem;
   letter-spacing: 0.2rem;  
   font-weight: 600;
@@ -66,6 +64,7 @@ font-size: 1rem;
   background-color: var(--mauve);
   cursor: -webkit-zoom-in;
 }
+
 @media screen and (max-width: 576px) {
 .nav-container{
   flex-direction:column; 
@@ -74,6 +73,5 @@ font-size: 1rem;
   .start-container {
     margin: 0 2rem;
     padding: 2 rem;
-}
-}
+}}
 

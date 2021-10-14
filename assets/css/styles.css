@@ -4,6 +4,12 @@
 --lavender-floral: #b388ebff;
 --cornflower-blue: #8093f1ff;
 --sky-blue-crayola: #72ddf7ff;
+--alert-text: #842029;
+--alert-background: #f8d7da; 
+--alert-border: #f5c2c7;
+--alert-wright-text: #0f5132;
+--alert-wright-background: #d1e7dd;
+--alert-wright-border: #badbcc;
 }
 *{
   box-sizing: border-box;
@@ -78,6 +84,7 @@ font-size: 1rem;
   font-weight: 400;
   margin: 0 4rem;
   padding: 4rem; 
+  margin-bottom: 4rem;
 }
 
 .options-container {
@@ -101,6 +108,29 @@ font-size: 1rem;
   background-color: var(--mauve);
   cursor: pointer;
 }
+.answer-alert { 
+    color: var(--alert-text);
+    background-color: var(--alert-background);
+    border-color: var(--alert-border);
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.answer-alert-wrong {
+  color: var(--alert-text);
+  background-color: var(--alert-background);
+  border-color: var(--alert-border);
+}
+
+.answer-alert-wright {
+  color: var(--alert-wright-text);
+  background-color: var(--alert-wright-background);
+  border-color: var(--alert-wright-border);
+}
+
 
 @media screen and (max-width: 576px) {
 .nav-container{

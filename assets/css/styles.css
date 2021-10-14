@@ -153,6 +153,11 @@ font-size: 1rem;
   flex-shrink: 2;
 }
 
+.game-over {
+  text-align: center;
+  background-color: var(--mauve);
+  color: black;
+}
 }
 @media screen and (max-width: 576px) {
 .nav-container{

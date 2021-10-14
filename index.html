@@ -24,7 +24,8 @@
     </header>
 
     <main class="main">
-      <div class="container start-container">
+      <!-- step1 - this container must disappear / js-->
+      <div class="container start-container"> 
         <h1 class="title">Geography Quiz</h1>
         <p>
           Introduction to geography unit test: quiz. Studying geography gives
@@ -35,7 +36,8 @@
           do give it a try and keep a lookout for more like it!
         </p>
         <div>
-          <button class="btn">Start Quiz</button>
+          <!--added id to the button to link with js-->
+          <button class="btn" id="start-quiz">Start Quiz</button>
         </div>
       </div>
       <div class="container answer-alert answer-alert-wrong">
@@ -44,6 +46,7 @@
       <div class="container answer-alert answer-alert-wright">
         Your answer is correct!
       </div>
+      <!--step2 - this container must appear / js-->
       <div class="container question-container">
         <h2 class="question">Geography Quiz Answers</h2>
         <div class="options-container">
@@ -62,7 +65,7 @@
               <input placeholder="Enter you initials" />
             </div>
             <div class="form-item">
-              <button class="btn">Submit</button>
+              <button class="btn-2">Submit</button>
             </div>
           </div>
         </form>

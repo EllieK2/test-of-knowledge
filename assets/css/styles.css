@@ -131,7 +131,29 @@ font-size: 1rem;
   border-color: var(--alert-wright-border);
 }
 
+.score-form {
+  text-align: center;
+  background-color: var(--mauve);
+  color: black;
+}
 
+.form-container {
+  display:flex;
+  flex-direction: column;
+}
+
+.form-item {
+  margin:2rem 0 ; 
+}
+
+.form-item input {
+  padding: 1rem 0.5rem; 
+  font-size: 1rem;
+  min-width: 400px;
+  flex-shrink: 2;
+}
+
+}
 @media screen and (max-width: 576px) {
 .nav-container{
   flex-direction:column; 
@@ -141,5 +163,9 @@ font-size: 1rem;
   .start-container {
     margin: 0 2rem;
     padding: 2rem;
+  }
+
+  .form-item input {
+    width: 100%; 
 }}
 

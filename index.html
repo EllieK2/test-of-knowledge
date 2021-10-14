@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css"/> 
-  <title>Code Quiz | Home</title>
-</head>
-<body>
-    <header class = "header">
-      <nav class = "nav-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Code Quiz | Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-container">
         <div class="nav-item">
-          <a href = "./highScores.html">High Scores</a>
+          <a href="./highScores.html">High Scores</a>
         </div>
         <div class="nav-item">Time: <span>0</span></div>
       </nav>
     </header>
 
     <main class="main">
-    <div class="container start-container">
-      <h1 class="title">Geography Quiz</h1>
-        <p>Introduction to geography unit test: quiz. Studying geography gives one the chance to understand the world we live in and the different features within it. Do you know where the tallest mountain in the world can be found, time zones in different parts of the world or how to actually read a map? This quiz will provide you with some insight do give it a try and keep a lookout for more like it!</p>
-      <div>
-        <button class= "btn">Start Quiz</button>
+      <div class="container start-container">
+        <h1 class="title">Geography Quiz</h1>
+        <p>
+          Introduction to geography unit test: quiz. Studying geography gives
+          one the chance to understand the world we live in and the different
+          features within it. Do you know where the tallest mountain in the
+          world can be found, time zones in different parts of the world or how
+          to actually read a map? This quiz will provide you with some insight
+          do give it a try and keep a lookout for more like it!
+        </p>
+        <div>
+          <button class="btn">Start Quiz</button>
+        </div>
       </div>
-    </div>
-    <div class="container answer-alert answer-alert-wrong">Your answer is incorrect!</div>
-    <div class="container answer-alert answer-alert-wright">Your answer is correct!</div>
-    <div class="container question-container">
-      <h2 class="question">Geography Quiz Answers</h2>
-      <div class="options-container">
-        <button class="option-items">Answer1</button>
-        <button class="option-items">Answer2</button>
-        <button class="option-items">Answer3</button>
-        <button class="option-items">Answer4</button>
+      <div class="container answer-alert answer-alert-wrong">
+        Your answer is incorrect!
       </div>
-    </div> 
+      <div class="container answer-alert answer-alert-wright">
+        Your answer is correct!
+      </div>
+      <div class="container question-container">
+        <h2 class="question">Geography Quiz Answers</h2>
+        <div class="options-container">
+          <button class="option-items">Answer1</button>
+          <button class="option-items">Answer2</button>
+          <button class="option-items">Answer3</button>
+          <button class="option-items">Answer4</button>
+        </div>
+      </div>
 
-    <div class="container score-form">
-<form>
-  <h2 class="question">Your score is 10</h2>
-  <div class="form-container">
-    <div class="form-item">
-      <input placeholder="Enter you initials"/>
-    </div>
-    <div class="form-item">
-    <button class="btn">Submit</button>
-  </div>
-  </div>
-</form>
-</div>
+      <div class="container score-form">
+        <form>
+          <h2 class="question">Your score is 10</h2>
+          <div class="form-container">
+            <div class="form-item">
+              <input placeholder="Enter you initials" />
+            </div>
+            <div class="form-item">
+              <button class="btn">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="container game-over">
+        <h2>Game Over</h2>
+      </div>
+      <br />
     </main>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>

@@ -39,7 +39,6 @@ const constructOptions = function (options) {
 };
 
 const constructQuestionContainer = function (question) {
-    console.log(question); 
 
     //construct container div
     const questionContainer = document.createElement("div");
@@ -53,10 +52,9 @@ const constructQuestionContainer = function (question) {
     //construct options div
     constructOptions(question.options);
     const options = constructOptions (question.options);
-    console.log(options);
     //append h2 and options div to container div 
     questionContainer.append(questionH2, options);
-
+    return questionContainer;
 };
 // 1render question container 
 // 1declare a function 
@@ -66,8 +64,9 @@ console.log("renderQuestionContainer");
 const currentQuestion = quizQuestions [0];
 
 //11construct the HTML for the question container
-constructQuestionContainer(currentQuestion); 
-//12append the container to the document 
+const questionContainer = constructQuestionContainer(currentQuestion); 
+//12append the container to the document
+document.getElementById("main-container").appendChild;
 };
 //7 declare a function 
 const removeStartContainer = function() {

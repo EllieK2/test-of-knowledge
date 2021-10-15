@@ -45,6 +45,23 @@ const constructOptions = function (options) {
     return optionsContainer;
 };
 
+const constructAlert = function () {
+
+}
+const renderWrongAlert = function () { 
+
+};
+
+const renderWrightAlert = function () { 
+    //construct alert 
+    constructAlert(); 
+    // start a timeout (delay)
+
+    // append the alert to the document 
+
+    //declare a timeout function (to remove the element) 
+};
+
 const verifyAnswer = function (event) {
     console.log("verifyAnswer");
     const target = event.target; 
@@ -65,6 +82,7 @@ const verifyAnswer = function (event) {
         count -=5;
     }else {
         console.log("WRONG");
+        renderAlertWrong ()
         }
         //go to next question 
     currentQuestionIndex +=1; 

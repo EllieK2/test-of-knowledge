@@ -3,28 +3,29 @@ const quizQuestions = [
     {
         title: "Which place is reserved for K2 in the ranking of the highest mountains on Earth? ",
         options: ["1", "2", "3","4"],
-        currentAnswer: "2",
+        correctOption: "2",
     },
     {   
         title: "Which place is reserved for Russia in the ranking of the largest countries on Earth by land area?",
         options: ["1", "2", "3", "4"],
-        currentAnswer: "1",
+        correctOption: "1",
     },
     {   
         title: "Which place is reserved for the US in the ranking of the largest countries on Earth by population?",
         options: ["1","2","3","4"],
-        currentAnswer: "3",
+        correctOption: "3",
     },
     {   
         title: "Which place is reserved for the Pacific Ocean in the ranking of the largest oceans on Earth?",
         options: ["1", "2", "3","4"],
-        currentAnswer: "1",
+        correctOption: "1",
     },
 ];
 
 //declare count value in global 
-//let count = quizQuestions.length * 5;
-let count = 5;
+let count = quizQuestions.length * 5;
+//let count = 5;
+let currentQuestionIndex = 0; 
 
 const constructOptions = function (options) {
     const optionsContainer = document.createElement("div");
@@ -55,16 +56,27 @@ const verifyAnswer = function (event) {
     // get the option user click on 
     const userOption = target.getAttribute("data-option");
     //get the correct option for the question
-    const correctOption = "";  
+    const correctOption = currentTarget.getAttribute("data-correct"); 
     //verify the 2
     console.log(userOption, correctOption);
 
     if (userOption !== correctOption) {
-        console.log("WRONG");
+        // time penalty deduct 5 seconds
+        count -=5;
     }else {
-        console.log("CORRECT");
+        console.log("WRONG");
         }
-    } 
+        //go to next question 
+    currentQuestionIndex +=1; 
+    //check if last question 
+    if (currentQuestionIndex < quizQuestions.length);  
+        // render the next question 
+    removeQuestionContainer(); 
+    renderQuestionContainer(); 
+    //check if last question 
+    } else {
+    console.log("render score form");
+    }  
 }; 
 
 const constructQuestionContainer = function (question) {
@@ -72,7 +84,9 @@ const constructQuestionContainer = function (question) {
     //construct container div
     const questionContainer = document.createElement("div");
     questionContainer.setAttribute("class", "container question-container");
-    
+    questionContainer.setAttribute("id", "question-container");
+    questionContainer.setAttribute("data-correct", question.CorrectOption);
+
     //construct h2 element
     const questionH2 = document.createElement("h2");
     questionH2.setAttribute("class", "question");
@@ -111,12 +125,21 @@ console.log(startContainer);
 startContainer.remove();
 
 }; 
+const removeQuestionContainer = function() {
+    //8target start container 
+    const QuestionContainer = document.getElementById("question-container");
+    console.log(QuestionContainer);
+    //9remove from document 
+    QuestionContainer.remove();
+    
+    }; 
+
 const startTimer = function () {
 // declare the timer tick function 
 const timerTick = function (timeTick) {
     console.log("tick");
     // check if the countdown has reached 0
-    if(count >= 0) {
+    if(count >= 0 && currentQuestionIndex < quizQuestions.length) {
         //render the countdown time in the document
         document.getElementById("countdown").textContent = count; 
         count -= 1; 

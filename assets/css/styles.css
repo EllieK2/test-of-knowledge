@@ -178,5 +178,17 @@ font-size: 1rem;
 
   .form-item input {
     width: 100%; 
-}}
+}
+  .title {
+    font-size: 0.5rem;
+    font-weight: 100;
+}
+
+.question.container {
+  text-align: center;
+  margin: 0 2rem;
+  padding: 4rem;
+}
+
+}
 

@@ -22,14 +22,28 @@ const quizQuestions = [
     },
 ];
 
+const constructQuestionContainer = function (question) {
+    console.log(question); 
+
+    //construct container div
+    const questionContainer = document.createElement("div");
+    questionContainer.setAttribute("class", "container question-container");
+    console.log(questionContainer);
+    //construct h2 element
+
+    //construct options div
+
+
+};
 // 1render question container 
 // 1declare a function 
 const renderQuestionContainer = function() {
 console.log("renderQuestionContainer");
 //10get the current question 
+const currentQuestion = quizQuestions [0];
 
 //11construct the HTML for the question container
-
+constructQuestionContainer(currentQuestion); 
 //12append the container to the document 
 };
 //7 declare a function 

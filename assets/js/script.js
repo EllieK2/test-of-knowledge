@@ -22,6 +22,10 @@ const quizQuestions = [
     },
 ];
 
+//declare count value in global 
+//let count = quizQuestions.length * 5;
+let count = 5;
+
 const constructOptions = function (options) {
     const optionsContainer = document.createElement("div");
     optionsContainer.setAttribute("class", "options-container");
@@ -81,6 +85,16 @@ const startTimer = function () {
 // declare the timer tick function 
 const timerTick = function (timeTick) {
     console.log("tick");
+    // check if the countdown has reached 0
+    if(count >= 0) {
+        //render the countdown time in the document
+        document.getElementById("countdown").textContent = count; 
+        count -= 1; 
+    } else {
+        //render game over container
+    console.log("GAME OVER");
+    clearInterval(timer);
+    }
 }; 
     //declare the timer
 const timer = setInterval(timerTick, 1000); 

@@ -1,4 +1,26 @@
-console.log('index');
+//declare the questions in array
+const quizQuestions = [
+    {
+        title: "Which place is reserved for K2 in the ranking of the highest mountains on Earth? ",
+        options: ["1", "2", "3","4"],
+        currentAnswer: "2",
+    },
+    {   
+        title: "Which place is reserved for Russia in the ranking of the largest countries on Earth by land area?",
+        options: ["1", "2", "3", "4"],
+        currentAnswer: "1",
+    },
+    {   
+        title: "Which place is reserved for the US in the ranking of the largest countries on Earth by population?",
+        options: ["1","2","3","4"],
+        currentAnswer: "3",
+    },
+    {   
+        title: "Which place is reserved for the Pacific Ocean in the ranking of the largest oceans on Earth?",
+        options: ["1", "2", "3","4"],
+        currentAnswer: "1",
+    },
+];
 
 // 1render question container 
 // 1declare a function 
@@ -12,10 +34,12 @@ console.log("renderQuestionContainer");
 };
 //7 declare a function 
 const removeStartContainer = function() {
-console.log("removeStartContainer");
 //8target start container 
 const startContainer = document.getElementById("start-container");
+console.log(startContainer);
 //9remove from document 
+startContainer.remove();
+
 }; 
 //4declare a function to execute when start button is called 
 const startQuiz = function () {

@@ -35,12 +35,22 @@ const constructOptions = function (options) {
         //create my button
     const optionButton = document.createElement("button");
     optionButton.setAttribute("class", "options-item");
+    optionButton.setAttribute("name", "option");
     optionButton.textContent = options;
         // append to optionsContainer
     optionsContainer.appendChild(optionButton);
     };
     return optionsContainer;
 };
+
+const verifyAnswer = function (event) {
+    console.log("verifyAnswer");
+    const target = event.target; 
+    const currentTarget = event.currentTarget ;
+    //check if click is from button only 
+    console.log(target, getAttribute("name")); 
+    
+}; 
 
 const constructQuestionContainer = function (question) {
 
@@ -56,8 +66,13 @@ const constructQuestionContainer = function (question) {
     //construct options div
     constructOptions(question.options);
     const options = constructOptions (question.options);
+
     //append h2 and options div to container div 
     questionContainer.append(questionH2, options);
+    
+    // add event listener to listen for click events
+    questionContainer.addEventListener("click", verifyAnswer);
+
     return questionContainer;
 };
 // 1render question container 

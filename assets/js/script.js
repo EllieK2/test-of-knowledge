@@ -40,7 +40,7 @@ const constructQuestionContainer = function (question) {
 
     //construct options div
     constructOptions(question.options);
-
+    const options = constructOptions (question.options);
 
 };
 // 1render question container 

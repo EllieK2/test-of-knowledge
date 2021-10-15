@@ -36,7 +36,8 @@ const constructOptions = function (options) {
     const optionButton = document.createElement("button");
     optionButton.setAttribute("class", "options-item");
     optionButton.setAttribute("name", "option");
-    optionButton.textContent = options;
+    optionButton.setAttribute("data-option", option);
+    optionButton.textContent = option;
         // append to optionsContainer
     optionsContainer.appendChild(optionButton);
     };
@@ -46,10 +47,24 @@ const constructOptions = function (options) {
 const verifyAnswer = function (event) {
     console.log("verifyAnswer");
     const target = event.target; 
-    const currentTarget = event.currentTarget ;
-    //check if click is from button only 
+    const currentTarget = event.currentTarget;
     console.log(target, getAttribute("name")); 
     
+    //check if click is from button only 
+    if (target.getAttribute("name") === "option") { 
+    // get the option user click on 
+    const userOption = target.getAttribute("data-option");
+    //get the correct option for the question
+    const correctOption = "";  
+    //verify the 2
+    console.log(userOption, correctOption);
+
+    if (userOption !== correctOption) {
+        console.log("WRONG");
+    }else {
+        console.log("CORRECT");
+        }
+    } 
 }; 
 
 const constructQuestionContainer = function (question) {

@@ -14,7 +14,7 @@ console.log("renderQuestionContainer");
 const removeStartContainer = function() {
 console.log("removeStartContainer");
 //8target start container 
-
+const startContainer = document.getElementById("start-container");
 //9remove from document 
 }; 
 //4declare a function to execute when start button is called 

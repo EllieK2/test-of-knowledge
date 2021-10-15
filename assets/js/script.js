@@ -45,8 +45,13 @@ const constructOptions = function (options) {
     return optionsContainer;
 };
 
-const constructAlert = function () {
+const constructAlert = function (className, text) {
+// construct div 
+const answerAlertAiv = document.createElement("div");
+answerAlertDiv.setAttribute("class", className);
+answerAlertDiv.textContent = text;
 
+return answerAlertDiv; 
 }
 const renderWrongAlert = function () { 
 
@@ -54,13 +59,37 @@ const renderWrongAlert = function () {
 
 const renderWrightAlert = function () { 
     //construct alert 
-    constructAlert(); 
-    // start a timeout (delay)
+const alert = constructAnswerAlert(); 
 
     // append the alert to the document 
+    document.getElementById("main-container").appendChild(alert);
+    // start a timeout (delay)
 
-    //declare a timeout function (to remove the element) 
+    //declare a timeout function (to remove the element)
+    const afterWait = function () {
+        //remove alert
+        alert.remove();
+        //kill timer
+        clearTimer(delay);
+    }
+
 };
+
+const renderWrongAlert = function () { 
+    //construct alert 
+const alert = constructAnswerAlert(); 
+
+    // append the alert to the document 
+    document.getElementById("main-container").appendChild(alert);
+    // start a timeout (delay)
+
+    //declare a timeout function (to remove the element)
+    const afterWait = function () {
+        //remove alert
+        alert.remove();
+        //kill timer
+        clearTimer(delay);
+    }
 
 const verifyAnswer = function (event) {
     console.log("verifyAnswer");

@@ -23,9 +23,11 @@ const quizQuestions = [
 ];
 
 const constructOptions = function (options) {
+    for(let i = 0; i< options.length; i++) {
 
-
+    }
 };
+
 const constructQuestionContainer = function (question) {
     console.log(question); 
 
@@ -41,6 +43,9 @@ const constructQuestionContainer = function (question) {
     //construct options div
     constructOptions(question.options);
     const options = constructOptions (question.options);
+
+    //append h2 and options div to container div 
+    questionContainer.append(questionH2, options);
 
 };
 // 1render question container 

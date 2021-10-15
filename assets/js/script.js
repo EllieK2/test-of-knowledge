@@ -22,16 +22,24 @@ const quizQuestions = [
     },
 ];
 
+const constructOptions = function (options) {
+
+
+};
 const constructQuestionContainer = function (question) {
     console.log(question); 
 
     //construct container div
     const questionContainer = document.createElement("div");
     questionContainer.setAttribute("class", "container question-container");
-    console.log(questionContainer);
+    
     //construct h2 element
+    const questionH2 = document.createElement("h2");
+    questionH2.setAttribute("class", "question");
+    questionH2.textContent = question.title; 
 
     //construct options div
+    constructOptions(question.options);
 
 
 };

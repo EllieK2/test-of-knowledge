@@ -23,9 +23,19 @@ const quizQuestions = [
 ];
 
 const constructOptions = function (options) {
+    const optionsContainer = document.createElement("div");
+    optionsContainer.setAttribute("class", "options-container");
     for(let i = 0; i< options.length; i++) {
-
-    }
+        //get the current option from array
+    const option = options [i];
+        //create my button
+    const optionButton = document.createElement("button");
+    optionButton.setAttribute("class", "options-item");
+    optionButton.textContent = options;
+        // append to optionsContainer
+    optionsContainer.appendChild(optionButton);
+    };
+    return optionsContainer;
 };
 
 const constructQuestionContainer = function (question) {
@@ -43,7 +53,7 @@ const constructQuestionContainer = function (question) {
     //construct options div
     constructOptions(question.options);
     const options = constructOptions (question.options);
-
+    console.log(options);
     //append h2 and options div to container div 
     questionContainer.append(questionH2, options);
 
